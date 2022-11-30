@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+<!-- <style></style> -->
+  <div class="nav_bar_flex">
+      <div class="header_links">
+
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="projects.php">Projects</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="tools.php">Tools</a></li>
+              <li><a href="https://github.com/Gubbu77">Github</a></li>
+            </ul>
+          </nav> 
+        </div>
+        
+        <div class="menu-bg" id="menu-bg"></div>
+      </div>
+      <h3 class="nickName">Gubbu</h3>
+    </div>
+
+
+
+    <script  type="text/JavaScript">
+
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+      }
+    </script>
+
+
+    <!-- style ///////////////////////////////////////// -->
+
+</body>
+</html>

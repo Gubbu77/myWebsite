@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+ <!-- footer -->
+
+    <div class="footer">
+
+    <section id="contact">
+
+      <h1 class="section-header">Contact</h1>
+      
+      <div class="contact-wrapper">
+      
+      <!-- Left contact page --> 
+        
+        <form id="contact-form" action="" class="form-horizontal" role="form">
+          
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name fm_name" placeholder="NAME" name="from_name" value="" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email email_id" placeholder="EMAIL" name="email_id" value="" required>
+            </div>
+          </div>
+
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id = "message" required></textarea>
+          
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+        
+      <!-- Left contact page --> 
+        
+          <div class="direct-contact-container">
+
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Thrissur, Kerala</span></i></li>
+              
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">indrajith.vs2016@gmail.com</a></span></i></li>
+              
+            </ul>
+
+            <hr>
+            <div class="social-media-list">
+              <a href="https://github.com/Gubbu77" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+
+              <a href="www.linkedin.com/in/indrajith-vs-11b810224" class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            
+              <a href="https://t.me/g_u_b_b_u" class="contact-icon">
+                <i class="fa fa-telegram" aria-hidden="true"></i></a>
+              
+              <a href="https://instagram.com/g_u_b_b_u?igshid=YmMyMTA2M2Y=" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   
+            </div>
+            <hr>
+
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+          </div>
+        
+      </div>
+      
+    </section>  
+      
+    </div>
+
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      emailjs.init('-Oi9E7VCyA33R7GjK')
+    </script>
+
+
+    <script text="text/JavaScript">
+      const btn = document.getElementById('submit');
+
+        document.getElementById('contact-form')
+        .addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          btn.value = 'Sending...';
+
+          const serviceID = 'service_wgbv6pm';
+          const templateID = 'template_zi0ufqc';
+
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.value = 'Send Email';
+              alert('Sent!');
+            }, (err) => {
+              btn.value = 'Send Email';
+              alert(JSON.stringify(err));
+            });
+      });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- <style></style> -->
+<div class="nav_bar_flex">
+    <div class="header_links">
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="https://github.com/Gubbu77">Github</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+    </div>
+    <h3 class="nickName">Gubbu</h3>
+  </div>
+
+
+
+  <script  type="text/JavaScript">
+
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+  <!-- main //////////////////////// -->
+<main>
+
+
+        <div class="projects">
+<!-- python  -->
+            <h3 class="project_heading">Python</h3>
+            <div class="line"></div>
+
+            <div class="python_container ">
+                <div class = "container reveal fade-right" >
+                    <div class = card>
+                    <div class = image>
+                        <img href = "#" src = "../images/sudokusolverimg7.jpg">
+                    </div>
+                    <div class = content>
+                        <h3>SUDOKU SOLVER</h3>
+                        <p>This Script solves almost any Sudoku Puzzle by visualizing through the Backtracking Algorithm which is made using the PyGame Library in Python. Ever tried but stucked on Sudoku Puzzles given in newspapers, magazines and online. You can use this script to get its solution instantly and move further.</p>
+                        <a href="#" class="py_github_codeLink"><i class="fa fa-github"></i>Code</a>
+                    </div>
+                    </div>    
+                </div>
+
+
+                <div class = "container reveal fade-right">
+                    <div class = card>
+                    <div class = image>
+                        <img href = "#" src = "../images/desktopAssistantImg.webp">
+                    </div>
+                    <div class = content>
+                        <h3>DESKTOP ASSISTANT</h3>
+                        <p>This is a desktop assistant created in python language. And take voice input and give output in voice and text form. It is capable of telling date and time, cpu status, telling jokes, taking screenshots, do wikidedia search, open websites, do google search, play songs, and it very much user friendly.</p>
+                        <a href="#" class="py_github_codeLink"><i class="fa fa-github"></i>Code</a>
+                    </div>
+                    </div>    
+                </div>
+
+                
+                <div class = "container reveal fade-right">
+                    <div class = card>
+                    <div class = image>
+                        <img href = "#" src =  "../images/webscrapperimg.webp">
+                    </div>
+                    <div class = content>
+                        <h3>WEB SCRAPER</h3>
+                        <p>Web scraping is data scraping used for extracting data from websites using its HTML structure and store them to a txt file. Libraries : Beautifulsoup and requests.</p>
+                        <a href="#" class="py_github_codeLink"><i class="fa fa-github"></i>Code</a>
+                    </div>
+                    </div>    
+                </div>
+            </div>
+
+
+<!-- android projects -->
+
+            <h3 class="project_heading">Android apps</h3>
+            <div class="line"></div>
+            <div class="project_container reveal fade-left">
+                <div class="android_projects">
+                    <div class="w3-content">
+                        <img class="mySlides" src="../images/bloodcamplogo.jpg">
+                        <h4 class="project_name">Blood Camp</h4>
+                    </div>
+
+                    <div class="details">
+                        <div class="content">
+                            <p class="project_para">
+                                Blood Camp is an Android Application that helps users to donate or to request blood.
+                                 Users can simply signin and add details and donate. The main feature of this app is 
+                                 that every users will notified when new blood request is submitted.
+                                 Tools : Adroid Studio, Firebase
+                            </p>
+                        </div>
+
+                        <div class="buttons">
+                            <a download="../apks/bloodcamp.apk" href="#" class="downld_apkBtn">
+                                <button class="downld_apkBtn"><i class="fa fa-download"></i>Download apk</button>
+                            </a>
+                            
+                            <a href="#" class="github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+
+            <div class="project_container reveal fade-left">
+                <div class="android_projects">
+                    <div class="w3-content">
+                        <img class="mySlides" src="../images/ethozhil.jpeg">
+                        <h4 class="project_name">NREGA</h4>
+                    </div>
+
+                    <div class="details">
+                        <div class="content">
+                            <p class="project_para">
+                                Academic Projects
+                                This App is based on National Rural Employement Guarantee Act (NREGA), that allows Panchayat members or Employees to store
+                                 their data. This data is saved in Firebase Realtime Database. The Panchayat
+                                  members can mark Employees Attandence and Wages. Tools :
+                                   Android Studio, Firebase.
+
+                            </p>
+                        </div>
+
+                        <div class="buttons">
+                            <a download="bloodcamp.apk" href="#" class="downld_apkBtn">
+                                <button class="downld_apkBtn"><i class="fa fa-download"></i>Download apk</button>
+                            </a>                            
+                            <a href="#" class="github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+
+<!-- unity -->
+            <h3 class="project_heading">Unity games</h3>
+            <div class="line"></div>
+
+            <div class="project_container reveal fade-right">
+                <div class="android_projects">
+                    <div class="w3-content">
+                        <img class="mySlides" src="../images/jumperlogo.png">
+                        <h4 class="project_name">JUMPER</h4>
+                    </div>
+
+                    <div class="details">
+                        <div class="content">
+                            <p class="project_para">
+                                First 3D Game build in Unity Game Engine coded with C#. This is a simple game that is very difficult to play (: there is a player he can jumps when
+                                 user touches the screen. When the player hit the objects he die. You can adjust the jump speed of the player.
+                                 Tool : Unity, Language : C#
+                            </p>
+                        </div>
+
+                        <div class="buttons">
+                            <a download="bloodcamp.apk" href="#" class="downld_apkBtn">
+                                <button class="downld_apkBtn"><i class="fa fa-download"></i>Download apk</button>
+                            </a>                           
+                             <a href="#" class="github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+
+            <div class="project_container reveal fade-right">
+                <div class="android_projects">
+                    <div class="w3-content">
+                        <img class="mySlides" src="../images/fpsshootiinglogo.jpg">
+                        <h4 class="project_name">FPS SHOOTER</h4>
+                    </div>
+
+                    <div class="details">
+                        <div class="content">
+                            <p class="project_para">
+                                I love FPS games so i tried to build an FPS Game. As like Call Of Duty, Dead Target and other FPS games
+                                FPS Shooter also supports Multiplayer Gaming. This Game is still in progess (:
+                                Tool : Unity, Language : C#
+                            </p>
+                        </div>
+
+                        <div class="buttons">
+                            <a download="bloodcamp.apk" href="#" class="downld_apkBtn">
+                                <button class="downld_apkBtn"><i class="fa fa-download"></i>Download apk</button>
+                            </a>                            
+                            <a href="#" class="github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+<!-- websites -->
+            <h3 class="project_heading">Web Development</h3>
+            <div class="line"></div>
+            
+            <div class="project_container  reveal fade-left">
+                <div class="website_projects">
+                    <div class="website_content">
+                        <img class="web_image" src="../images/pisingpage.jpg">
+                        <h4 class="webproject_name">Phishing Page</h4>
+                    </div>
+
+                    <div class="web_details">
+                        <div class="web_content">
+                            <p class="web_project_para">
+                                This is a simple pishing project. Made Instagram login page that is exactly like orginal instagram login page
+                            , by clicking the login button the entered Username and Password is transfered to my PC (:
+                            </p>
+                        </div>
+
+                        <div class="web_buttons">
+                            <button class="web_downld_apkBtn"><i class="fa fa-link"></i>Open</button>
+                            <a href="#" class="web_github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+
+            <div class="project_container  reveal fade-left">
+                <div class="website_projects">
+
+                    <div class="web_details">
+                        <div class="web_content">
+                            <p class="web_project_para">
+                                Finally made my website. Lan : html, css, js, php 
+                            </p>
+                        </div>
+
+                        <div class="web_buttons">
+                            <a href = "index.html"><button class="web_downld_apkBtn"><i class="fa fa-link"></i>Open</button></a>
+                            <a href="#" class="web_github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                        </div>
+                    </div>
+
+                    <div class="website_content">
+                        <img class="web_image" src="../images/mywebsiteimg.png">
+                        <h4 class="webproject_name">My Website</h4>
+                    </div>
+                </div>
+                                
+            </div>
+
+
+<!-- javascript -->
+            <marquee behavior="horizontal" direction="Left" class="marqueeJS">JavaScript Projects loading...</marquee>
+            <!-- <h3 class="project_heading">JavaScript</h3>
+            <div class="line"></div> -->
+
+<!-- 
+            <div class="row1-container  reveal fade-right">
+                <div class="box box-down cyan">
+                <h2>Supervisor</h2>
+                <p>Monitors activity to identify project roadblocksMonitors activity to identify project roadblocks
+                    Monitors activity to identify project roadblocks
+                </p>
+                <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+                <a href="#" class="js_github_codeLink"><i class="fa fa-github"></i>Code</a>
+                </div>
+
+                <div class="box red">
+                <h2>Team Builder</h2>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+                <a href="#" class="js_github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                </div>
+
+                <div class="box box-down blue">
+                <h2>Calculator</h2>
+                <p>Uses data from past projects to provide better delivery estimates</p>
+                <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+                <a href="#" class="js_github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                </div>
+            </div>
+            <div class="row2-container reveal fade-right">
+                <div class="box orange">
+                <h2>Karma</h2>
+                <p>Regularly evaluates our talent to ensure quality</p>
+                <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+                <a href="#" class="js_github_codeLink"><i class="fa fa-github"></i>Code</a>
+
+                </div>
+            </div> -->
+
+        </div>
+
+
+        <div class="footerline">dssdfs</div>
+
+    </main>
+    
+    <!-- footer -->
+
+     <!-- footer -->
+
+     <div class="footer">
+
+        <section id="contact">
+    
+          <h1 class="section-header">Contact</h1>
+          
+          <div class="contact-wrapper">
+          
+          <!-- Left contact page --> 
+            
+            <form id="contact-form" action="" class="form-horizontal" role="form">
+              
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name fm_name" placeholder="NAME" name="from_name" value="" required>
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email email_id" placeholder="EMAIL" name="email_id" value="" required>
+                </div>
+              </div>
+    
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id = "message" required></textarea>
+              
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                </div>
+              
+              </button>
+              
+            </form>
+            
+          <!-- Left contact page --> 
+            
+              <div class="direct-contact-container">
+    
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Thrissur, Kerala</span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">indrajith.vs2016@gmail.com</a></span></i></li>
+                  
+                </ul>
+    
+                <hr>
+                <div class="social-media-list">
+                  <a href="https://github.com/Gubbu77" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i></a>
+    
+                  <a href="www.linkedin.com/in/indrajith-vs-11b810224" class="contact-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                
+                  <a href="https://t.me/g_u_b_b_u" class="contact-icon">
+                    <i class="fa fa-telegram" aria-hidden="true"></i></a>
+                  
+                  <a href="https://instagram.com/g_u_b_b_u?igshid=YmMyMTA2M2Y=" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                       
+                </div>
+                <hr>
+    
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+    
+              </div>
+            
+          </div>
+          
+        </section>  
+          
+        </div>
+    
+    
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+    
+        <script type="text/javascript">
+          emailjs.init('-Oi9E7VCyA33R7GjK')
+        </script>
+    
+    
+        <script text="text/JavaScript">
+          const btn = document.getElementById('submit');
+    
+            document.getElementById('contact-form')
+            .addEventListener('submit', function(event) {
+              event.preventDefault();
+    
+              btn.value = 'Sending...';
+    
+              const serviceID = 'service_wgbv6pm';
+              const templateID = 'template_zi0ufqc';
+    
+              emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Send Email';
+                  alert('Sent!');
+                }, (err) => {
+                  btn.value = 'Send Email';
+                  alert(JSON.stringify(err));
+                });
+          });
+        </script>
+
+
+
+
+    <script src="../script/script.js"></script>
+    <script>
+        
+        // scroll anim
+
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            } else {
+            reveals[i].classList.remove("active");
+            }
+        }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+
+
+
+</body>
+</html>

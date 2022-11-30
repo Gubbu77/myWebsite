@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tools</title>
+    <link rel="stylesheet" href="../css/tools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- <style></style> -->
+  <div class="nav_bar_flex">
+    <div class="header_links">
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="https://github.com/Gubbu77">Github</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+    </div>
+    <h3 class="nickName">Gubbu</h3>
+  </div>
+
+
+
+  <script  type="text/JavaScript">
+
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+
+  <!-- main /////////////////////////// -->
+
+  <marquee behavior="horizontal" direction="Left" class="marqueeJS">Page is in progress...</marquee>
+
+    
+    <h3 class="heading">Tools</h3>
+    <div class="container">
+
+        <div class="password_box">
+            <h2>Random Password Generater</h2>
+            <input class="output_view" type="text" name="" placeholder="Create password" id="password" readonly>
+            <table>
+                <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+                <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+            </table>
+
+        </div>
+        
+
+    </div>
+
+    <script>
+
+        // random pass generator
+        var password=document.getElementById("password");
+
+        function genPassword() {
+            var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var passwordLength = 12;
+            var password = "";
+
+            for (var i = 0; i <= passwordLength; i++) {
+                var randomNumber = Math.floor(Math.random() * chars.length);
+                password += chars.substring(randomNumber, randomNumber +1);
+            }
+                document.getElementById("password").value = password;
+        }
+
+        function copyPassword() {
+            var copyText = document.getElementById("password");
+            copyText.select();
+            document.execCommand("copy");  
+        }
+
+    </script>
+    
+
+    
+     <!-- footer -->
+
+     <div class="footer">
+
+        <section id="contact">
+    
+          <h1 class="section-header">Contact</h1>
+          
+          <div class="contact-wrapper">
+          
+          <!-- Left contact page --> 
+            
+            <form id="contact-form" action="" class="form-horizontal" role="form">
+              
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name fm_name" placeholder="NAME" name="from_name" value="" required>
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email email_id" placeholder="EMAIL" name="email_id" value="" required>
+                </div>
+              </div>
+    
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id = "message" required></textarea>
+              
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                </div>
+              
+              </button>
+              
+            </form>
+            
+          <!-- Left contact page --> 
+            
+              <div class="direct-contact-container">
+    
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Thrissur, Kerala</span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">indrajith.vs2016@gmail.com</a></span></i></li>
+                  
+                </ul>
+    
+                <hr>
+                <div class="social-media-list">
+                  <a href="https://github.com/Gubbu77" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i></a>
+    
+                  <a href="www.linkedin.com/in/indrajith-vs-11b810224" class="contact-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                
+                  <a href="https://t.me/g_u_b_b_u" class="contact-icon">
+                    <i class="fa fa-telegram" aria-hidden="true"></i></a>
+                  
+                  <a href="https://instagram.com/g_u_b_b_u?igshid=YmMyMTA2M2Y=" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                       
+                </div>
+                <hr>
+    
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+    
+              </div>
+            
+          </div>
+          
+        </section>  
+          
+        </div>
+    
+    
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+    
+        <script type="text/javascript">
+          emailjs.init('-Oi9E7VCyA33R7GjK')
+        </script>
+    
+    
+        <script text="text/JavaScript">
+          const btn = document.getElementById('submit');
+    
+            document.getElementById('contact-form')
+            .addEventListener('submit', function(event) {
+              event.preventDefault();
+    
+              btn.value = 'Sending...';
+    
+              const serviceID = 'service_wgbv6pm';
+              const templateID = 'template_zi0ufqc';
+    
+              emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Send Email';
+                  alert('Sent!');
+                }, (err) => {
+                  btn.value = 'Send Email';
+                  alert(JSON.stringify(err));
+                });
+          });
+        </script>
+</body>
+</html>
+
+

@@ -1,0 +1,1053 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 16);
+
+
+}
+
+/* navbar ////////////////////////////////////////////////////////// */
+
+/* navbar */
+
+.nav_bar_flex{
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+
+}
+
+.nickName{
+
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  opacity: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animateNickname 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+
+@keyframes animateNickname {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(85, 79, 79, 0);
+  opacity: 30%;
+}
+
+
+
+
+
+/* hamburger menu ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+  
+}
+
+.bar {
+  height: 5px;
+  width: 75%;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  opacity: 70%;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.nav li a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #ffffff, #ffffff);
+  border-radius: 50%;
+  transition: 0.3s ease;
+  /* #DC052D */
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: rgb(0, 0, 0);
+  opacity: 100%;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+/* main //////////////////////////////////////////////////////////////////////////////// */
+.projects{
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.projects .line{
+    background-color: white;
+    height: 1px;
+    opacity: 70%;
+    width: 88%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+.project_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project_heading{
+
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.android_projects{
+    align-items: center;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 33);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.w3-content{
+    margin-right: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.w3-content img{
+    box-shadow: 5px 10px 8px #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+
+.project_name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.896);
+    letter-spacing: 0.2px;
+}
+
+.details{
+    padding: 10px;
+    width: 70%;
+}
+
+
+.content p{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    line-height: 18px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.806);
+}
+
+/* buttton */
+.buttons{
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+.downld_apkBtn{
+    background-color: rgb(0, 136, 255);
+    border:none;
+    width: auto;
+    padding: 5px;
+    border-radius: 3px;
+    height: auto;
+    color: white;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.downld_apkBtn i{
+    margin-right: 5px;
+}
+.downld_apkBtn:hover{
+    background-color: rgb(0, 42, 255);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.github_codeLink{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
+.github_codeLink:hover{
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: blue;
+
+}
+
+.github_codeLink i{
+    margin-right: 5px;
+}
+
+/* responsive */
+@media all and (max-width: 800px) {
+    .android_projects{
+        flex-direction: column;
+    }
+
+    .w3-content{
+        margin-top: 5px;
+        margin-right: 0px;
+    }
+
+    .details{
+        width: 90%;
+    }
+
+}
+
+
+
+/* website projects */
+
+.website_projects{
+    align-items: center;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0, 0, 33);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* image */
+.web_image{
+    width: 160px;
+    height: 260px;
+
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #000000
+}
+
+.website_content{
+    padding: 10px;
+    margin-right: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.web_project_para{
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    line-height: 18px;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.806);
+}
+
+.webproject_name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.896);
+    letter-spacing: 0.2px;
+}
+
+.web_details{
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* buttton */
+.web_buttons{
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+.web_downld_apkBtn{
+    background-color: rgb(0, 136, 255);
+    border:none;
+    width: auto;
+    padding: 5px;
+    border-radius: 3px;
+    height: auto;
+    color: white;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.web_downld_apkBtn i{
+    margin-right: 5px;
+}
+.web_downld_apkBtn:hover{
+    background-color: rgb(0, 42, 255);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.web_github_codeLink{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
+.web_github_codeLink:hover{
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: blue;
+
+}
+
+.web_github_codeLink i{
+    margin-right: 5px;
+}
+
+/* responsive */
+@media all and (max-width: 800px) {
+
+    .web_image{
+        width: 120px;
+        height: 180px;
+    }
+
+    .website_content{
+        margin-top: 5px;
+        margin-right: 0px;
+    }
+
+    .web_details{
+        width: 90%;
+    }
+
+}
+
+
+/* python //////////////////////////////////////////////////////////////////////////////////////// */
+
+.python_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+.container {
+    position : relative;
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap: wrap;
+    padding : 30px;  
+  }
+  
+  .container .card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : rgb(0, 0, 33);
+    margin : 30px 10px;
+    padding : 20px 15px;
+    align-items: center;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .container .card:hover {
+    height : 320px;    
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    width : 200px;
+    height : 200px;
+    background-color: rgb(0, 0, 16);
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+
+  .container .card .content h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+  }
+  
+  .container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+
+  .py_github_codeLink{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
+.py_github_codeLink:hover{
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: blue;
+
+}
+
+.py_github_codeLink i{
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+
+  /* responsive */
+@media all and (max-width: 800px) {
+
+    .python_container{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* javascript =============================================================================== */
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(0, 0%, 100%);
+  --varyDarkBlue: hsl(0, 0%, 100%);
+  --veryLightGray: rgb(0, 0, 183);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(0, 0%, 100%); 
+}
+
+h1:first-of-type {
+  font-weight: var(--weight1);
+  color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+  color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+}
+
+.header {
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.header p {
+  margin: 0 auto;
+  line-height: 2;
+  color: var(--grayishBlue);
+}
+
+
+.box p {
+  color: var(--blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.box {
+  background-color: rgb(0, 0, 33);
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;  
+}
+
+img {
+  float: right;
+}
+
+/* github code link */
+.js_github_codeLink{
+  text-decoration: none;
+  color: black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: white;
+
+}
+.js_github_codeLink:hover{
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  color: blue;
+
+}
+
+.js_github_codeLink i{
+  margin-right: 5px;
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box-down {
+      position: relative;
+      top: 150px;
+  }
+  .box {
+      width: 20%;
+   
+  }
+  .header p {
+      width: 30%;
+  }
+  
+}
+
+
+.footerline{
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 1px;
+  width: auto;
+
+}
+
+
+/* scroll anim  */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 0.8s ease-in-out;
+}
+.active.fade-right {
+  animation: fade-right 0.8s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* footer ///////////////////////////////////////////////////////// */
+
+/* footer */
+
+.footer{
+  bottom: 0%;
+}
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 18px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+}
+
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  max-height: 200px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  padding: 6px;
+}
+
+.message_box{
+  height: 150px;
+}
+
+.message_box{
+  text-align: center;
+}
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 100%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 100%;
+  height: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -22px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 3;
+  color: #aaa;
+  font-size: 10px;
+}
+
+.contact-text {
+  font: 300 14px 'Lato', sans-serif;
+  letter-spacing: 1.5px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list .contact-icon a {
+  color: #fff;
+}
+
+.social-media-list .contact-icon {
+  position: relative; 
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 10px 3px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list .contact-icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 52px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list .contact-icon:hover {
+  background-color: #fff; 
+}
+
+.social-media-list .contact-icon:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list .contact-icon:hover {
+  color: #000;
+}
+
+.copyright {
+  font: 200 10px 'Oswald', sans-serif;
+  color: #555;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    max-width: 175px;
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 50%;
+  }
+}
+
+.marqueeJS{
+  margin-top: 50px;
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
